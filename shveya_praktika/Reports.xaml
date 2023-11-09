@@ -1,0 +1,17 @@
+﻿<Window x:Class="shveya_praktika.Reports"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:shveya_praktika"
+        mc:Ignorable="d"
+        Title="Отчёты" Height="700" Width="1000"
+        MinHeight="700" MinWidth="1000">
+    <StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Button Style="{StaticResource ExitBackButton}" Content="Назад" Click="BackButton_Click"/>
+            <Button Style="{StaticResource ExitBackButton}" HorizontalAlignment="Right" Content="Выйти" Click="ExitButton_Click"/>
+        </StackPanel>
+        <TextBlock Text="Окно отчётов"/>
+    </StackPanel>
+</Window>

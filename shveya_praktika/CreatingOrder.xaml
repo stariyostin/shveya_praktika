@@ -1,0 +1,27 @@
+﻿<Window x:Class="shveya_praktika.CreatingOrder"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:shveya_praktika"
+        mc:Ignorable="d"
+       Title="Оформление заказа" Height="900" Width="900"
+        MinHeight="900" MinWidth="900">
+    <StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Button Style="{StaticResource ExitBackButton}" Content="Назад" Click="BackButton_Click"/>
+            <Button Style="{StaticResource ExitBackButton}" HorizontalAlignment="Right" Content="Выйти" Click="ExitButton_Click"/>
+        </StackPanel>
+        <TextBlock Name="ProductName" Text="Поиск:"/>
+        <TextBox Name="SearchText" TextChanged="SearchText_TextChanged" HorizontalAlignment="Left"/>
+        <ComboBox Name="ProductList" DisplayMemberPath="Наименование"/>
+        <Button Click="AddButton_Click" Content="Добавить к заказу"/>
+        <ScrollViewer Height="500">
+            <StackPanel Name="PositionsPlace">
+
+            </StackPanel>
+        </ScrollViewer>
+        <TextBlock Name="Sum" Text="Стоимость: "/>
+        <Button Content="Оформить" Click="BuyButton_Click"/>
+    </StackPanel>
+</Window>

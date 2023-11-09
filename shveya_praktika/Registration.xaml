@@ -1,0 +1,21 @@
+﻿<Window x:Class="shveya_praktika.Registration"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:shveya_praktika"
+        mc:Ignorable="d"
+        Title="Регистрация" Height="450" Width="450"
+        ResizeMode="NoResize">
+    <StackPanel>
+        <TextBlock HorizontalAlignment="Center" FontSize="18">Регистрация</TextBlock>
+        <TextBlock>Логин:</TextBlock>
+        <TextBox Width="410" Name="Login"></TextBox>
+        <TextBlock>Пароль:</TextBlock>
+        <PasswordBox Name="Password"></PasswordBox>
+        <TextBlock>Повторите пароль:</TextBlock>
+        <PasswordBox Name="RepeatedPassword"></PasswordBox>
+        <Button Content="Создать аккаунт" Click="ButtonReg_Click"/>
+        <Button Content="Авторизация" Click="AutButton_Click"/>
+    </StackPanel>
+</Window>
